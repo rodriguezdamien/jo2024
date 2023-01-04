@@ -1,0 +1,442 @@
+/*Déclaration de la charte graphique*/
+@font-face{
+    font-family: Paris2024;
+    font-weight:normal;
+    src: url(fonts/Paris2024-Regular.woff2);
+}
+
+@font-face{
+    font-family: Paris2024;
+    font-weight:bold;
+    src: url(fonts/Paris2024-Semibold.woff2);
+}
+
+@font-face{
+    font-family: Megadrone;
+    src: url(fonts/Megadrone.woff2);
+}
+
+@font-face{
+    font-family: Terminator;
+    src: url(fonts/Terminator.ttf);
+}
+
+:root{
+    /*Raccourci de couleurs précises*/
+    --noir:#070600;
+    --rouge:#FF0030;
+    --blanc:#F7F7FF;
+    /*déclaration espaces blancs*/
+    --padding:150px;
+}
+
+/*Déclaration de la couleur du fond et de texte sans "class"*/
+body {
+    margin:0px;
+    background-color:var(--noir) !important;
+    color:var(--blanc);
+    font-family:Paris2024
+}
+
+/*Stylisation de la nav bar*/
+
+.navbar {
+    width:100%;
+    background-color: rgba(7, 6, 0,.9);
+    position:fixed;
+    backdrop-filter: blur(21px);
+    z-index:10;
+}
+
+.navbar div {
+    display:flex;
+    align-items:center;
+    max-width:1450px;
+    margin:auto;
+}
+
+.logo-nav {
+    margin:10px;
+    width:170px;
+    margin-right:15px;
+}
+
+.ligne-blanche {
+        height:30px;
+        border-left: 1px solid rgba(255,255,255,0.25);
+        margin:5px;
+    }
+
+.nav-button {
+    padding:0px;
+}
+
+.nav-button li{
+    display:inline;
+    margin:16px;
+    font-family: Paris2024;
+}
+
+.nav-button span {
+    padding-top:10px;
+    padding-bottom:10px;
+    text-decoration: underline rgba(255, 255, 255, 0);
+    transition: text-decoration-color 200ms;
+}
+
+.nav-button span:hover{
+    text-decoration:underline;
+    text-decoration-color:var(--rouge);
+}
+
+.nav-button a {
+    outline: none;
+    text-decoration: none;
+    color: var(--blanc)
+   }
+
+/* Stylisation du footer */
+   footer {
+    border-top:1px solid #575757;
+}
+footer div {
+    background-color:var(--noir);
+    padding:20px 100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+footer img {
+    width:140px;
+}
+
+footer p{
+    font-family:sans-serif;
+    font-size:13px;
+}
+
+/*
+============
+PAGE ACCUEIL
+============
+*/
+/*Stylisation "ligne de flottaison
+IMPORTANT : REUTILISE DANS L'AFFICHAGE DES BANNIERES "REGLES" ET "PALMARES" DANS LES PAGES RESPECTIVES*/
+.demo-collab {
+    height:auto;
+    position:relative;
+}
+.demo {
+    object-fit:cover;
+    height:100%;
+    width:100%;
+    position:absolute;
+    z-index: -1;
+}
+
+.collab {
+    position:relative;
+    text-align:center;
+    padding-top:240px;
+    padding-bottom:200px;
+    z-index:1;
+}
+
+.collab img {
+    min-width:400px;
+    width:50%;
+    max-width:600px;
+    margin:70px 0 70px;
+}
+
+.collab h1 {
+    font-size:70px;
+}
+
+/*Stylisation des textes*/
+h1{
+    font-family:Megadrone;
+    font-size:50px;
+    margin-bottom:15px;
+    margin-top:0px;
+}
+
+.t-rouge {
+    color:var(--rouge);
+}
+
+/*Stylisation des sections*/
+
+.section{
+    padding-top:40px;
+    padding-bottom:40px;
+    text-align:center;
+    padding-left:var(--padding);
+    padding-right:var(--padding);
+}
+
+.sec-noir {
+    background-color:var(--noir);
+    color:var(--blanc);
+}
+
+.sec-blanche {
+    background-color:var(--blanc);
+    color:var(--noir);
+}
+.sec-rouge {
+    background-color:var(--rouge);
+    color:var(--blanc);
+}
+
+p{
+    overflow-wrap: break-word;
+    font-size:19px;
+    margin:0px;
+}
+
+/*Stylisation du text cliquable*/
+
+#textlink{
+    color:var(--rouge)
+}
+
+/*Espaçage entre texte de découverte et vidéo*/
+
+#video p{margin-bottom:20px;}
+
+/*Stylisation partie "Histoire"*/
+
+.timeline {
+    margin-left:20%;
+    margin-right:20%;
+    min-width:800px;
+    text-align:left;
+    border-left:5px dotted white;
+    padding-left:50px;
+    display:block;
+    position:relative;
+    line-height:25px;
+}
+
+.timeline h2{
+    margin-bottom:10px;
+}
+
+.timeline h2::before{
+    content:'';
+    width:20px;
+    display:inline-block;
+    position:absolute;
+    height:20px;
+    left:-18.5px;
+    border:5px solid var(--blanc);
+    border-radius:50%;
+    background:var(--rouge);
+}
+
+/*Stylisation Mots-clefs*/
+
+.mots-clefs{
+    margin-left:auto;
+    margin-right:auto;
+    width:90%;
+    max-width:1000px;
+}
+
+.mots-clefs{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+.mots-clefs th, .mots-clefs td{
+    padding:18px;
+}
+.mots-clefs th{
+    width:180px;
+}
+.mots-clefs tr:nth-child(odd) {
+    background-color:#DBDBDB;
+}
+.mots-clefs tr:nth-child(even) {
+    background-color:#F3F3F3;
+}
+
+/*
+===========
+PAGE REGLES
+===========
+*/
+/* memo : top | left & right | bottom*/
+.regles {
+    margin:0 100px 0;
+}
+.regimpair{
+    text-align:left;
+}
+.regpair{
+    text-align:right;
+}
+
+.rule {
+    display:flex;
+    align-items:center;
+    text-align:justify;
+    margin-bottom:20px;
+}
+
+.rule img {
+    width:500px;
+    margin-right:60px;
+}
+
+.rpair{
+    flex-direction:row-reverse;
+}
+.rpair img {
+    margin-right:0px;
+    margin-left:60px;
+}
+hr {
+    border-color: #444949;
+    width:100%;
+    margin:40px 0;
+}
+.grid {
+    margin:0 px 0;
+    display:grid;
+    grid-template-columns: 1fr 1px 1fr;
+}
+.player p {
+    font-size:30px;
+}
+.player img{
+    width:250px;
+}
+
+.schem-separateur{
+    border-left: 1px solid #494949;
+    margin:5px;
+    width:50px;
+}
+
+.cphrase{
+    grid-column-start:1;
+    grid-column-end:4;
+}
+
+/*
+=============
+PAGE PALMARES
+=============
+*/
+
+.boutons{
+    margin-bottom:35px;
+}
+
+.boutons a{
+    padding:15px 40px;
+    border:none;
+    background-color:var(--rouge);
+    border-radius:999px;
+    font-family:Paris2024;
+    font-size:17px;
+    text-decoration:none;
+    color:var(--blanc);
+    margin:20px;
+}
+
+.palmares{
+    margin:0 200px;
+}
+
+.palmares table {
+    width:100%;
+    margin:30px 0;
+}
+.palmares table,.palmares th,.palmares td,.palmares tr{
+    border:1px solid #494949;
+    border-collapse:collapse;
+}
+
+.colonne1{
+    width:10%;
+}
+
+.ticolonne {
+    width:10%;
+    font-family:Terminator;
+    font-size:25px;
+    padding:10px;
+}
+
+.colonne{
+    width:30%;
+}
+
+.colonne div{
+    display:flex;
+    width:100%;
+    align-items:center;
+    justify-content:center;
+    padding: 10px 0 10px;
+}
+.colonne p{
+    margin:0 15px 0;
+}
+.colonne img{
+    width:60px;
+}
+
+/*drapeau de pays*/
+.flag
+{
+    width:35px;
+    height:25px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position-y:center;
+}
+
+.fr
+{
+    background-image:url('img/country/france.png');
+}
+
+.us
+{
+    background-image:url('img/country/usa.png');
+}
+
+.bresil
+{
+    background-image:url('img/country/bresil.png');
+}
+
+.jp
+{
+    background-image:url('img/country/japon.png');
+}
+
+.esp
+{
+    background-image: url('img/country/espagne.png');
+}
+
+.mex
+{
+    background-image: url('img/country/mexique.png');
+}
+/*léger responsive*/
+
+@media screen and (max-width: 1500px) {
+    :root{
+        --padding:100px;
+    }
+    .timeline {
+    margin-left:20px;
+    margin-right:20px;
+    }
+  }
