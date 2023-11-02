@@ -1,87 +1,193 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chase Tag JO2024 - Accueil</title>
-    <link href="./media/style.css" rel="stylesheet">
-    <link rel="icon" href="./media/img/paris-logo.png">
-</head>
-<body>
-    <nav class="navbar">
-        <div>
-            <img class="logo-nav" src="media/img/logo.png" alt="Paris 2024">
-            <span class="ligne-blanche"></span>
-            <ul class="nav-button">
-                <li><a href="#"><span class="active">Accueil</span></a></li>
-                <li><a href="regles.html"><span>Règles</span></a></li>
-                <li><a href="palmares.html"><span>Palmarès</span></a></li>
-            </ul>
-        </div>
-    </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chase Tag JO2024 - Accueil</title>
+        <link href="./media/style.css" rel="stylesheet" />
+        <link rel="icon" href="./media/img/paris-logo.png" />
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <div class="nav-space">
+                <div>
+                    <img
+                        class="logo-nav"
+                        src="./media/img/logo.png"
+                        alt="Paris 2024"
+                    />
+                    <span class="ligne-blanche"></span>
+                    <ul class="nav-button">
+                        <li>
+                            <a href="#"><span class="active">Accueil</span></a>
+                        </li>
+                        <li>
+                            <a href="regles.html"><span>Règles</span></a>
+                        </li>
+                        <li>
+                            <a href="palmares.html"><span>Palmarès</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="register.html" class="sign-up">Inscrivez-vous</a>
+            </div>
+        </nav>
         <div class="demo-collab" id="accueil">
             <video class="demo" autoplay="" loop="">
-                <source src="media/video/demo.mp4">
+                <source src="./media/video/demo.mp4" />
             </video>
             <div class="collab">
-                    <img src="media/img/collab.png" alt="Collaboration">
+                <img src="./media/img/collab.png" alt="Collaboration" />
             </div>
         </div>
-    <div class="section sec-noir">
-        <h1 class="t-rouge">ChASe TAg</h1>
-        <p>Le World Chase Tag ou championnat du monde de jeu du chat s’est déroulé pour la première fois en 2016.<br>
-            Il se déroule chaque année le temps d’un week-end et voit s’affronter de nombreuses équipes composées de sportifs adeptes du parkour.
-            <br>Mais pour la première fois lors des jeux olymiques de Paris en 2024, World Chase Tag s'allient aux J.-O.
-            <br><br>
-            L'objectif du Chase Tag ?<br> Pendant 20 secondes, un chasseur a pour objectif d'attraper un évadé, tandis que celui-ci doit échapper à son adversaire.
-            <br>Durant 16 chasses, deux équipes doivent obtenir le plus de point possible.
-            <br><a href="regles.html" id="textlink"><u>Vous voulez en savoir plus ?</u></a>
-        </p>
-    </div>
-    <div class="sec-blanche section" id="video">
-        <h1 class="t-rouge">DEcouvRez</h1>
-        <p>Découvrez le Chase Tag avec ce reportage réalisé par France Télé Sport :</p>
-        <!--Integration YouTube qui semble avoir des problèmes à se lancer en local en fonction du navigateur (?)-->
-        <iframe width="700" height="394" src="https://www.youtube.com/embed/Cr0VxdMybgo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="section sec-rouge">
-    <h1>HIStOIre</h1>
-        <div class="timeline">
-            <h2>11 Janvier 2011 - Lancement du World Chase Tag</H2>
-            <p>Lancement de la ligue, les règles ont été instaurés et les compétitions commencent à s'intaller peu à peu dans le monde.</p>
-            <h2>18 Décembre 2016 - Première édition du World Chase Tag</h2>
-            <p>Première édition du World Chase Tag. Après de longues années de préparation et de phases de qualification, des équipes du monde entier se sont réunis pour s'affronter sur le terrain !</p>
-            <h2>12 Novembre 2021 - Première compétition du World Chase Tag en Europe</h2>
-            <p>Dans l'objectif de faire découvrir le Chase Tag compétitif, le World Chase Tag 2GO Euro Edition a eu lieu, se sont d'ailleurs des français qui ont remporté la victoire à cette édition !</p>
-            <h2>Arrivé du Chase Tag dans les jeux olympiques</h2>
-            <p>C'est le moment ! World Chase Tag s'allie aux jeux olympiques de Paris 2024 pour permettre de rendre rendre le jeu de notre enfance compétitif !</p>
+        <div class="section sec-noir">
+            <h1 class="t-rouge">ChASe TAg</h1>
+            <p>
+                Le World Chase Tag ou championnat du monde de jeu du chat s’est
+                déroulé pour la première fois en 2016.<br />
+                Il se déroule chaque année le temps d’un week-end et voit
+                s’affronter de nombreuses équipes composées de sportifs adeptes
+                du parkour.
+                <br />Mais pour la première fois lors des jeux olymiques de
+                Paris en 2024, World Chase Tag s'allient aux J.-O. <br /><br />
+                L'objectif du Chase Tag ?<br />
+                Pendant 20 secondes, un chasseur a pour objectif d'attraper un
+                évadé, tandis que celui-ci doit échapper à son adversaire.
+                <br />Durant 16 chasses, deux équipes doivent obtenir le plus de
+                point possible. <br /><a href="regles.html" id="textlink"
+                    ><u>Vous voulez en savoir plus ?</u></a
+                >
+            </p>
         </div>
-    </div>
-    <div class="section sec-blanche">
-        <h1>MOtS-CLEFS</h1>
-        <table class="mots-clefs">
-        <tr><th>EQ (EVASION QUALITY)</th><td>Valeur hypothétique représentant le niveau 
-            de protection qu'un obstacle (ou une zone sur le Quad) fournit à l'Evader. Plus l'EQ est élevé, 
-            plus la protection est importante (Jason Matten). </td></tr>
-        <tr><th>HERDING</th><td>
-            Technique utilisée par le Chaser pour enfermer l'Evader dans des zones du Quad qui facilitera la réalisation d'un Tag.</td></tr>
-        <tr><th>REVERSE HERDING</th><td>Technique utilisée par l'Evadé pour attirer le Chasseur dans des zones du Quad qui sont 
-            plus difficiles à faire un Tag</td></tr>
-        <tr><th>PINCH POINT</th><td>
-            Zones sur le Terrain où l'Evadé a des options limitées pour s'échapper.</td></tr>
-        <tr><th>IDLING</th><td>
-            Technique utilisée par l'Evader pour se cacher derrière un obstacle à haut EQ et faire perdre du temps aux Chasers / 
-            ralentir le chrono tout en dépensant le moins d'énergie.</td></tr>
-        <tr><th>SPIKE</th><td>Chasse qui dure moins de 5 secondes.</td></tr>
-        <tr><th>TAILING</th><td>
-            Technique utilisée par le Chaser où il suit le même chemin que l'Evadé (généralement considéré comme une stratégie inférieure).</td></tr>
-        <tr><th>BENNY HILL</th><td>lorsque le Chaser court et contourne le même obstacle (généralement un QE élevé) pour essayer d'attraper 
-            l'Evader (généralement effectué par des athlètes inexpérimentés).
-            Les athlètes plus expérimentés chercheront à FLUSH le Chaser hors des zones à QE élevé rapidement et efficacement.</td></tr>
-        <tr><th>QUAD</th><td>Nom de l'arène de jeu.</td></tr></table>
-    </div>       
-    <footer>
-    <div><img src="media/img/collab-footer.png" alt="Collaboration"><p>Site créé par Damien Rodriguez.</p></div>
-    </footer>
-</body>
+        <div class="sec-blanche section" id="video">
+            <h1 class="t-rouge">DEcouvRez</h1>
+            <p>
+                Découvrez le Chase Tag avec ce reportage réalisé par France Télé
+                Sport :
+            </p>
+            <!--Integration YouTube qui semble avoir des problèmes à se lancer en local en fonction du navigateur (?)-->
+            <iframe
+                width="700"
+                height="394"
+                src="https://www.youtube.com/embed/Cr0VxdMybgo"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+        </div>
+        <div class="section sec-rouge">
+            <h1>HIStOIre</h1>
+            <div class="timeline">
+                <h2>11 Janvier 2011 - Lancement du World Chase Tag</h2>
+                <p>
+                    Lancement de la ligue, les règles ont été instaurés et les
+                    compétitions commencent à s'intaller peu à peu dans le
+                    monde.
+                </p>
+                <h2>18 Décembre 2016 - Première édition du World Chase Tag</h2>
+                <p>
+                    Première édition du World Chase Tag. Après de longues années
+                    de préparation et de phases de qualification, des équipes du
+                    monde entier se sont réunis pour s'affronter sur le terrain
+                    !
+                </p>
+                <h2>
+                    12 Novembre 2021 - Première compétition du World Chase Tag
+                    en Europe
+                </h2>
+                <p>
+                    Dans l'objectif de faire découvrir le Chase Tag compétitif,
+                    le World Chase Tag 2GO Euro Edition a eu lieu, se sont
+                    d'ailleurs des français qui ont remporté la victoire à cette
+                    édition !
+                </p>
+                <h2>Arrivé du Chase Tag dans les jeux olympiques</h2>
+                <p>
+                    C'est le moment ! World Chase Tag s'allie aux jeux
+                    olympiques de Paris 2024 pour permettre de rendre rendre le
+                    jeu de notre enfance compétitif !
+                </p>
+            </div>
+        </div>
+        <div class="section sec-blanche">
+            <h1>MOtS-CLEFS</h1>
+            <table class="mots-clefs">
+                <tr>
+                    <th>EQ (EVASION QUALITY)</th>
+                    <td>
+                        Valeur hypothétique représentant le niveau de protection
+                        qu'un obstacle (ou une zone sur le Quad) fournit à
+                        l'Evader. Plus l'EQ est élevé, plus la protection est
+                        importante (Jason Matten).
+                    </td>
+                </tr>
+                <tr>
+                    <th>HERDING</th>
+                    <td>
+                        Technique utilisée par le Chaser pour enfermer l'Evader
+                        dans des zones du Quad qui facilitera la réalisation
+                        d'un Tag.
+                    </td>
+                </tr>
+                <tr>
+                    <th>REVERSE HERDING</th>
+                    <td>
+                        Technique utilisée par l'Evadé pour attirer le Chasseur
+                        dans des zones du Quad qui sont plus difficiles à faire
+                        un Tag
+                    </td>
+                </tr>
+                <tr>
+                    <th>PINCH POINT</th>
+                    <td>
+                        Zones sur le Terrain où l'Evadé a des options limitées
+                        pour s'échapper.
+                    </td>
+                </tr>
+                <tr>
+                    <th>IDLING</th>
+                    <td>
+                        Technique utilisée par l'Evader pour se cacher derrière
+                        un obstacle à haut EQ et faire perdre du temps aux
+                        Chasers / ralentir le chrono tout en dépensant le moins
+                        d'énergie.
+                    </td>
+                </tr>
+                <tr>
+                    <th>SPIKE</th>
+                    <td>Chasse qui dure moins de 5 secondes.</td>
+                </tr>
+                <tr>
+                    <th>TAILING</th>
+                    <td>
+                        Technique utilisée par le Chaser où il suit le même
+                        chemin que l'Evadé (généralement considéré comme une
+                        stratégie inférieure).
+                    </td>
+                </tr>
+                <tr>
+                    <th>BENNY HILL</th>
+                    <td>
+                        lorsque le Chaser court et contourne le même obstacle
+                        (généralement un QE élevé) pour essayer d'attraper
+                        l'Evader (généralement effectué par des athlètes
+                        inexpérimentés). Les athlètes plus expérimentés
+                        chercheront à FLUSH le Chaser hors des zones à QE élevé
+                        rapidement et efficacement.
+                    </td>
+                </tr>
+                <tr>
+                    <th>QUAD</th>
+                    <td>Nom de l'arène de jeu.</td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <div>
+                <img src="./media/img/collab-footer.png" alt="Collaboration" />
+                <p>Site créé par Damien Rodriguez.</p>
+            </div>
+        </footer>
+        <script src="./script/script.js"></script>
+    </body>
 </html>

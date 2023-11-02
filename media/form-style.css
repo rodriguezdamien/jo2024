@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Paris2024;
+    font-weight: normal;
+    src: url(fonts/Paris2024-Regular.woff2);
+}
+
+@font-face {
+    font-family: Paris2024;
+    font-weight: bold;
+    src: url(fonts/Paris2024-Semibold.woff2);
+}
+
+.pagetitre {
+    position: relative;
+    text-align: center;
+    padding-top: 145px;
+    padding-bottom: 100px;
+    z-index: 1;
+}
+
+.logo {
+    margin-left: 100px;
+}
+
+.black {
+    background-color: rgb(11, 11, 11);
+    border: var(--bs-border-width) solid rgb(66, 66, 66);
+}
+
+.input-error {
+    background-color: rgb(35, 7, 7);
+    border: var(--bs-border-width) solid rgb(120, 0, 0);
+}
+
+.spacing {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 20px;
+    width: fit-content;
+}
+
+.form-check-input:focus,
+.form-control:focus,
+.form-select:focus {
+    border-color: rgb(255, 0, 48);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(190, 0, 35, 0.434);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid rgb(255, 139, 160);
+    background-color: rgb(13, 13, 13);
+}
+
+.form-check-input:checked {
+    background-color: rgb(255, 0, 48);
+    border-color: rgb(255, 0, 48);
+}
+
+.col {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.btn-red {
+    /*couleur personnalisé pour le bouton, modifie en quelque sorte les variables de bootstrap*/
+    --bs-btn-color: #fff;
+    --bs-btn-bg: rgb(255, 0, 48);
+    --bs-btn-border-color: rgb(255, 0, 48);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgb(189, 0, 35);
+    --bs-btn-hover-border-color: rgb(255, 22, 65);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: rgb(155, 0, 28);
+    --bs-btn-active-border-color: rgb(190, 0, 35);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    padding: 15px;
+}
+
+.footers {
+    border-top: 1px solid #575757;
+    width: 100%;
+}
+.footers div {
+    background-color: var(--noir);
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footers img {
+    width: 140px;
+}
+
+.footers p {
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.form-title-label {
+    /*fix parce que bootstrap rend mal*/
+    margin-top: 0.5rem;
+}
+
+.sub-form-label {
+    font-size: 1rem;
+}
+
+.error {
+    color: rgb(255, 0, 48);
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="media/bootstrap.css">
+        <link href="./media/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="media/form-style.css">
+        <link rel="icon" href="./media/img/paris-logo.png">
+        <title>Chase Tag JO2024 - Inscription</title>
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <div class="nav-space">
+                <div>
+                    <img
+                        class="logo-nav"
+                        src="./media/img/logo.png"
+                        alt="Paris 2024"
+                    >
+                    <span class="ligne-blanche"></span>
+                    <ul class="nav-button">
+                        <li>
+                            <a href="index.html"
+                                ><span class="active">Accueil</span></a
+                            >
+                        </li>
+                        <li>
+                            <a href="regles.html"><span>Règles</span></a>
+                        </li>
+                        <li>
+                            <a href="palmares.html"><span>Palmarès</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="register.html" class="sign-up">Inscrivez-vous</a>
+            </div>
+        </nav>
+        <div class="demo-collab" id="accueil">
+            <video class="demo" autoplay="" loop="">
+                <source src="./media/video/regles.mp4">
+            </video>
+            <div class="pagetitre">
+                <h1>INSCRIVEZ-VOUS</h1>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <form action="#" id="signup">
+                <div class="spacing container black rounded">
+                    <div class="row">
+                        <div class="col" id="firstNameContainer">
+                            <label
+                                for="firstName"
+                                class="form-label form-title-label"
+                                >Prénom</label
+                            >
+                            <input
+                                class="black form-control"
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                            >
+                        </div>
+                        <div class="col" id="lastNameContainer">
+                            <label
+                                for="lastName"
+                                class="form-label form-title-label"
+                            >
+                                Nom
+                            </label>
+                            <input
+                                class="black form-control"
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                            >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" id="civiliteContainer">
+                            <label class="form-label form-title-label"
+                                >Civilité</label
+                            >
+                            <div>
+                                <!--container différent pour le mettre à la ligne-->
+                                <input
+                                    class="black form-check-input"
+                                    type="radio"
+                                    name="civilite"
+                                    id="homme"
+                                    value="homme"
+                                >
+                                <label for="homme" class="form-label"
+                                    >Homme</label
+                                >
+                                <input
+                                    class="black form-check-input"
+                                    type="radio"
+                                    name="civilite"
+                                    id="femme"
+                                    value="femme"
+                                >
+                                <label for="femme" class="form-label"
+                                    >Femme</label
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div id="nationContainer">
+                        <label
+                            class="form-label form-title-label"
+                            for="nationalite"
+                            >Nationalité :</label
+                        >
+                        <select
+                            class="form-select black"
+                            id="nationalite"
+                            name="nationalite"
+                        >
+                            <option selected value="">Sélectionner ...</option>
+                            <option value="fra">France</option>
+                            <option value="usa">Etats-Unis d'Amérique</option>
+                            <option value="jpn">Japon</option>
+                            <option value="bre">Brésil</option>
+                            <option value="uk">Royaume-Unis</option>
+                            <option value="spa">Espagne</option>
+                        </select>
+                    </div>
+                    <label class="form-label form-title-label" for="password"
+                        >Mot de passe :</label
+                    >
+                    <input
+                        class="black form-control"
+                        type="password"
+                        id="password"
+                        name="password"
+                    >
+                    <p class="sub-form-label">
+                        Votre mot de passe doit contenir au moins :
+                    </p>
+                    <ul>
+                        <li id="maj">Une majuscule</li>
+                        <li id="nb">Un chiffre</li>
+                        <li id="sp">Un caractère spécial</li>
+                    </ul>
+                    <div id="passwordConfirmContainer">
+                        <label
+                            class="form-label form-title-label"
+                            for="passwordconfirm"
+                            >Confirmez votre mot de passe :</label
+                        >
+                        <input
+                            class="black form-control"
+                            type="password"
+                            name="passwordconfirm"
+                            id="passwordconfirm"
+                        >
+                    </div>
+                    <div>
+                        <label class="form-label form-title-label"
+                            >Centres d'intérêt :</label
+                        >
+                        <div id="centreinterContainer">
+                            <div class="row g-1 text-center">
+                                <div class="col">
+                                    <input
+                                        class="black form-check-input"
+                                        type="checkbox"
+                                        name="centreinter"
+                                        id="courir"
+                                        value="courir"
+                                    >
+                                    <label for="courir" class="form-label"
+                                        >Courir</label
+                                    >
+                                </div>
+                                <div class="col">
+                                    <input
+                                        class="black form-check-input"
+                                        type="checkbox"
+                                        name="centreinter"
+                                        id="marcher"
+                                        value="marcher"
+                                    >
+                                    <label for="marcher" class="form-label"
+                                        >Marcher</label
+                                    >
+                                </div>
+                                <div class="col">
+                                    <input
+                                        class="black form-check-input"
+                                        type="checkbox"
+                                        name="centreinter"
+                                        id="sauter"
+                                        value="sauter"
+                                    >
+                                    <label for="sauter" class="form-label"
+                                        >Sauter</label
+                                    >
+                                </div>
+                                <div class="col">
+                                    <input
+                                        class="black form-check-input"
+                                        type="checkbox"
+                                        name="centreinter"
+                                        id="danser"
+                                        value="danser"
+                                    >
+                                    <label for="danser" class="form-label"
+                                        >Danser</label
+                                    >
+                                </div>
+                            </div>
+                            <div class="row g-1 text-center">
+                                <div class="col">
+                                    <input
+                                        class="black form-check-input"
+                                        type="checkbox"
+                                        name="centreinter"
+                                        id="chasser"
+                                        value="chasser"
+                                    >
+                                    <label for="chasser" class="form-label"
+                                        >Chasser</label
+                                    >
+                                </div>
+                                <div class="col">
+                                    <input
+                                        class="black form-check-input"
+                                        type="checkbox"
+                                        name="centreinter"
+                                        id="echapper"
+                                        value="echapper"
+                                    >
+                                    <label for="echapper" class="form-label"
+                                        >Echapper</label
+                                    >
+                                </div>
+                                <div class="col">
+                                    <input
+                                        class="black form-check-input"
+                                        type="checkbox"
+                                        name="centreinter"
+                                        id="fainter"
+                                        value="fainter"
+                                    >
+                                    <label for="fainter" class="form-label"
+                                        >Fainter</label
+                                    >
+                                </div>
+                                <div class="col">
+                                    <input
+                                        class="black form-check-input"
+                                        type="checkbox"
+                                        name="centreinter"
+                                        id="prevoir"
+                                        value="prevoir"
+                                    >
+                                    <label for="prevoir" class="form-label"
+                                        >Prévoir</label
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 m-3 mx-auto">
+                        <button
+                            type="button"
+                            class="btn btn-red btn-lg center"
+                            onclick="checkForm()"
+                        >
+                            Confirmer l'inscription
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="footers">
+            <div>
+                <img src="./media/img/collab-footer.png" alt="Collaboration">
+                <p>Site créé par Damien Rodriguez.</p>
+            </div>
+        </div>
+        <script src="./script/script.js"></script>
+    </body>
+</html>
